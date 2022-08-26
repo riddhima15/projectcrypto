@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Crypto Tracker</title>
+</head>
+<body style="background-color:rgba(11, 5, 72, 0.97)">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <h1 class="col-md-7 text-center" style=" color:hsl(0, 9%, 96%); font-weight:700" >Crypto Tracker</h1>
+            <h4 class="col-md-7 text-center " style=" color:hsl(0, 9%, 96%); font-weight:600" >By Riddhima Pradhan</h4><br/>
+            <br/>
+            <div class="col-md-6 row justify-content-center bg-warning mt-4 rounded-4">
+                <div class="col-10">
+                    <form action="" id="searchForm">
+                        <div class="form-row">
+                            <div class="col-12 form-group">
+                                <label for="xyz" class="mt-4 mb-2"><b>Coin Type</b></label>
+                                <select name="coinType" class="form-control mb-2" id="xyz">
+                                    <option value="bitcoin">Bitcoin</option>
+                                    <option value="dogecoin">Dogecoin</option>
+                                    <option value="ethereum">Ethereum</option>
+                                    <option value="solana">Solana</option>
+                                    <option value="ripple">Ripple</option>
+                                    <option value="polkadot">Polkadot</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="col-12 btn btn-primary mb-4">Get Price</button><br/><br/><br/><br/>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 text-center row justify-content-center">
+                <table class="col-md-7 m-5 rounded-4" border="1px" id="tableResult" style="background-color: white;font-weight:700">
+                    
+                </table>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '71dfb83f-87df-402d-af91-21c138ea112f', f: true }); done = true; } }; })();</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-25LC1764X6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-25LC1764X6');
+    </script>
+    
+</body>
+</html>
